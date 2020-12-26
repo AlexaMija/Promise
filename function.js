@@ -1,11 +1,16 @@
 export default function.js
 startGame();
-const warrior = ["warrior1", "warrior2", "warrior3", "warrior4", "warrior5"]
+var warrior1;
+var warrior2;
+var warrior3;
+var warrior4;
+var warrior5;
+
 
 
 const arenaWithWarriors = ( numWarriors = 5) => {
   if (typeof numWarriors !== "number" || numWarriors > 5 || numWarriors < 1) {
-    throw Error("Please entera valid number of warriors (1 - 5)")
+    throw Error("Please enter a valid number of warriors (1 - 5)")
   }
   function startGame(numWarriors) {
     if (numWarriors = 5 ) {
@@ -34,8 +39,8 @@ setTimeout(() => {
   if (ourRandomWarrior.health > 0 ) {
   //  return async attack //Ona ima rekurzivni poziv same sebe.
     var newWarrior = ourRandomWarrior.health - 10;
-    /**Random unit, koji ima healt > 0 i njemu smakni healt za 10
-    optrilike
+    /**Random unit, koji ima healt > 
+    DA LI JE OVDE POTREBNO THIS. ?
     */
   }
 }
