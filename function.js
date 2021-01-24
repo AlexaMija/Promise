@@ -6,8 +6,6 @@ var warrior3;
 var warrior4;
 var warrior5;
 
-
-
 const arenaWithWarriors = ( numWarriors = 5) => {
   if (typeof numWarriors !== "number" || numWarriors > 5 || numWarriors < 1) {
     throw Error("Please enter a valid number of warriors (1 - 5)")
@@ -18,7 +16,6 @@ const arenaWithWarriors = ( numWarriors = 5) => {
     } else {
       return false (or null) (or "Something going wrong.")
     }
-  }
 }
 class Warrior = {
   constructor(name, health = 100, rechargeTime = 1000 * health / 100,
@@ -39,7 +36,7 @@ setTimeout(() => {
   if (ourRandomWarrior.health > 0 ) {
   //  return async attack //Ona ima rekurzivni poziv same sebe.
     var newWarrior = ourRandomWarrior.health - 10;
-    /**Random unit, koji ima healt > 
+    /**Random unit, koji ima healt >
     DA LI JE OVDE POTREBNO THIS. ?
     */
   }
